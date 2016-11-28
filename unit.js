@@ -26,7 +26,7 @@ bot.on('message', function(msg) {
     var cmd = commands[command]
     if (cmd) {
       cmd.process(bot, msg, suffix, suffix2);
-      console.log("-\n[Commands]: Processing command: " + command) 
+      console.log("-\n[Commands]: Processing command: " + command)
     }
   }
 });
