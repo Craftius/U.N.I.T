@@ -18,7 +18,12 @@ bot.on('ready', () => {
 });
 
 // create an event listener for messages
+//adding replying to only the GB server, we dont want to piss people off
+//server id ; 108284571144957952
 bot.on('message', function(msg) {
+  {
+    // make sure we're in the right server, that would be bad.
+    if(Guild.id === config.serverid) {
   if(msg.content[0] === config.discordjs_trigger) {
 	var command = msg.content.toLowerCase().split(" ")[0].substring(1);
     var suffix = msg.content.substring(command.length + 2);
@@ -26,9 +31,11 @@ bot.on('message', function(msg) {
     var cmd = commands[command]
     if (cmd) {
       cmd.process(bot, msg, suffix, suffix2);
-      console.log("-\n[Commands]: Processing command: " + command) 
+      console.log("-\n[Commands]: Processing command: " + command)
     }
   }
+}
+}
 });
 
 // log our bot in
