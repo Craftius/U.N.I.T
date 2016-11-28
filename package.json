@@ -1,0 +1,20 @@
+{
+  "name": "craftius",
+  "version": "1.10.1",
+  "description": "Just a bot m8",
+  "readme": "README.md",
+  "maintainers": [
+    "Craftius: (skyrpte@gmail.com)"
+  ],
+  "author": "Craftius",
+  "repository": {
+    "type": "git",
+    "url": "N/A"
+  },
+  "license": "GPL-3.0",
+  "dependencies": {
+    "discord.js": "10.0.1",
+	"node-opus": "0.2.1"
+  },
+  "main": "unit.js"
+}
