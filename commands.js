@@ -1,4 +1,3 @@
-// THIS IS A TEST, DO NOT BE ALARMED!!
 try {
 	require('./config.json');
 } catch (e) {
