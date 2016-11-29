@@ -27,6 +27,7 @@ bot.on('message', function(msg) {
     if (cmd) {
       cmd.process(bot, msg, suffix, suffix2);
       console.log("-\n[Commands]: Processing command: " + command)
+	bot.sendMessage(config.channelid, "[Command]: Processed command: " + command + " for " + msg.sender);
     }
   }
 });
