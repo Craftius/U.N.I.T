@@ -1,4 +1,5 @@
 {
   "counters": "on",
-  "discordjs_trigger": "-"
+  "discordjs_trigger": "-",
+  "channelid": "something goes here"
 }
