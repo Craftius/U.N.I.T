@@ -15,6 +15,7 @@ client.Dispatcher.on("GATEWAY_READY", e => {
 
 client.Dispatcher.on("MESSAGE_CREATE", e => {
 	if (e.message.author.id === client.User.id) return;
+	if (e.message.channel.isPrivate()) return;
 	var eperm = client.User.can(Discordie.Permissions.Text.EMBED_LINKS, e.message.channel)
 	var msg = e.message.content
 	var time = new Date().toLocaleString()
