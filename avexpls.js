@@ -12,6 +12,9 @@ client.Dispatcher.on("GATEWAY_READY", e => {
 
 //e.message.content.split(" ").slice(1).join(" ") --easy one suffix
 
+client.Dispatcher.on("GUILD_MEMBER_ADD", e => {
+e.message.channel.sendMessage(e.member.username + "insert text here")
+});
 
 client.Dispatcher.on("MESSAGE_CREATE", e => {
 	if (e.message.author.id === client.User.id) return;
@@ -112,4 +115,4 @@ if (msg.split("/")[2] == "discord.gg"){
 		console.log("Advertisement eradicated.");
 	}
 	}
-		});
+});
