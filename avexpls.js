@@ -3,7 +3,7 @@ var client = new Discordie();
 
 client.connect({
   // replace this sample token
-  token: "MjUyNjMyNDAzNDM5MjU1NTY0.Cx4t4A.ZOD477i2cmRAXQg3PjtVmEQtA7U"
+  token: ""
 });
 
 client.Dispatcher.on("GATEWAY_READY", e => {
